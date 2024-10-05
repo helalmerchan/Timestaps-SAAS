@@ -115,7 +115,7 @@ const Nav = async () => {
           >
             <span className="text-2xl">📜</span>
             <span className="hidden font-bold sm:inline-block">
-              YouTubeToChapters
+              Chapters Gen
             </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">

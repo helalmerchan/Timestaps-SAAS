@@ -1,11 +1,13 @@
 import { MailIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-100 py-8 dark:bg-gray-800">
-      <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <MaxWidthWrapper>
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             📜
@@ -27,10 +29,7 @@ export default function Footer() {
                 </a>
               </span>
             </div>
-          </div>
-          <p className="text-gray-500 dark:text-gray-400">
-            Developed by <b>StackHelal</b>            
-          </p>
+          </div>         
         </div>
         <div className="flex flex-col gap-4">
           <h4 className="text-lg font-bold">Follow Us</h4>
@@ -78,10 +77,11 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 mt-8">
         <div className="border-t border-gray-200 pt-8 dark:border-gray-700">
           <p className="text-gray-500 dark:text-gray-400 text-center">
-            &copy; 2024 All rights reserved.
+            &copy; 2024 StackHelal, all rights reserved.
           </p>          
         </div>
       </div>
+    </MaxWidthWrapper>
     </footer>
   );
 }
